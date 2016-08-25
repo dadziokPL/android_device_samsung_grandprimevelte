@@ -1,3 +1,38 @@
-#
-# system.prop for j1acelte
-#
+
+# RIl
+rild.libpath=/system/lib/libsec-ril.so
+
+# MISC
+ro.product_ship=true
+ro.chipname=PXA19xx
+keyguard.no_require_sim=1
+ro.wifi.active_roaming.enable=true
+ro.tel.config.path=/system/etc/tel/
+ro.config.max_starting_bg=10
+persist.service.camera.isptype=1
+ro.kernel.qemu=0
+ro.cmd.DUAL_SIMCARD=true
+ril.stk.sim.profile=FFFFFFFF7F0F009F7F00001FE200000003
+ril.stk.usim.profile=FFFFFFFF7F9F00DFFF00001FE2000000C3E00000000148005100000000080000
+ro.cmd.ssipc_enable=true
+ro.security.mode=tz
+ro.cmd.WORLD_PHONE=true
+ro.telephony.default_network=9
+ro.atm.manufacturer.id=Marvell
+ro.atm.model.id=LINUX
+ro.atm.id=Marvell
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapgrowthlimit=96m
+dalvik.vm.heapsize=256m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=2m
+dalvik.vm.heapmaxfree=8m
+drm.service.enabled=true
+ro.com.android.dateformat=MM-dd-yyyy
+# LCD
+ro.sf.lcd_density=240
+# Camera
+camera2.portability.force_api=1
+ro.device.rear_cam=8 MP
+ro.device.front_cam=5 MP
+media.sfrec.adj_frames=2
