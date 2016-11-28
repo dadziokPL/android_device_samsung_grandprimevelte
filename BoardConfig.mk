@@ -33,11 +33,11 @@ BOARD_CUSTOM_BOOTIMG_MK := device/samsung/grandprimevelte/custom_mkbootimg.mk
 BOARD_MKBOOTIMG_ARGS := --dt device/samsung/grandprimevelte/dt.img
 TARGET_PREBUILT_KERNEL := device/samsung/grandprimevelte/kernel
 #TARGET_KERNEL_SOURCE := kernel/samsung/grandprimevelte
-#TARGET_KERNEL_CONFIG := pxa1088_grandprimevelte_eur_defconfig
-#TARGET_KERNEL_VARIANT_CONFIG := pxa1088_grandprimevelte_eur_tgalal
+#TARGET_KERNEL_CONFIG := pxa1908_grandprimevelte_eur_defconfig
+#TARGET_KERNEL_VARIANT_CONFIG := pxa1908_grandprimevelte_eur_tgalal
 
 #twrp
-TW_THEME:= portrait_mdpi
+TW_THEME := portrait_mdpi
 RECOVERY_SDCARD_ON_DATA := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 BOARD_HAS_NO_REAL_SDCARD := true
@@ -45,7 +45,7 @@ TW_EXCLUDE_MTP := true
 TW_MTP_DEVICE := /dev/usb_mtp_gadget
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TARGET_RECOVERY_INITRC := device/samsung/grandprimevelte/init.rc
-TW_BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/grandprimevelte/graphics.c
+#TW_BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/grandprimevelte/graphics.c
 TW_NO_REBOOT_BOOTLOADER := true
 #TW_HAS_DOWNLOAD_MODE := true
 TW_EXCLUDE_SUPERSU := true
