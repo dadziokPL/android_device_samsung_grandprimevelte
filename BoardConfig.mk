@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
-#-include vendor/samsung/grandprimevelte/BoardConfigVendor.mk
+include vendor/samsung/grandprimevelte/BoardConfigVendor.mk
 #-include device/samsung/lt02wifi/BoardConfig.mk
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -11,6 +11,7 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := cortex-a7
 ARCH_ARM_HAVE_TLS_REGISTER := true
+USE_OPENGL_RENDERER := true
 
 TARGET_BOOTLOADER_BOARD_NAME := grandprimevelte
 TARGET_RECOVERY_FSTAB := device/samsung/grandprimevelte/recovery.fstab
